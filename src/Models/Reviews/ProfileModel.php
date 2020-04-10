@@ -94,7 +94,7 @@ class ProfileModel extends Model
     /**
      * @return string
      */
-    public function getAverageRating(): string
+    public function getAverageRating(): float
     {
         return $this->averageRating;
     }
