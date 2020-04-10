@@ -67,11 +67,11 @@ class ReviewModel extends Model
     }
 
     /**
-     * @return string
+     * @return \DateTime
      */
-    public function getDateSince(): string
+    public function getDateSince(): \DateTime
     {
-        return $this->dateSince;
+        return date_create($this->dateSince);
     }
 
     /**
