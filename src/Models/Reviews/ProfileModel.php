@@ -282,4 +282,14 @@ class ProfileModel extends Model
     {
         return $this->reviews;
     }
+
+    public function getLast12MonthAverageRating()
+    {
+        return $this->last12MonthAverageRating;
+    }
+
+    public function getLast12MonthNumberReviews()
+    {
+        return $this->last12MonthNumberReviews;
+    }
 }
